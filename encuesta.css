@@ -1,0 +1,181 @@
+/* =====================
+   RESET BÁSICO
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  background: linear-gradient(135deg, #4aa3a3, #1e3c72);
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+/* =====================
+   CONTENEDOR
+===================== */
+.contenedor {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* =====================
+   TÍTULO
+===================== */
+.contenedor h1 {
+  text-align: center;
+  color: #0a2647;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.contenedor p {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   NOTA DESTACADA
+===================== */
+.nota {
+  background: #e6f4ff;
+  border-left: 5px solid #1e90ff;
+  padding: 15px 18px;
+  border-radius: 8px;
+  color: #0a2647;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* =====================
+   FORMULARIO
+===================== */
+form {
+  margin-top: 20px;
+}
+
+/* =====================
+   CAMPOS
+===================== */
+.campo {
+  margin-bottom: 25px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #144272;
+  font-size: 0.95rem;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="number"],
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* FOCUS */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #f9b233;
+  box-shadow: 0 0 0 2px rgba(249,178,51,0.25);
+}
+
+/* =====================
+   CHECKBOXES
+===================== */
+.grupo-checkbox {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.grupo-checkbox li {
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.grupo-checkbox input {
+  margin-right: 8px;
+}
+
+/* =====================
+   TEXTAREAS
+===================== */
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* =====================
+   CONFIRMACIÓN
+===================== */
+.campo label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* =====================
+   BOTÓN
+===================== */
+.acciones {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.acciones button {
+  background: linear-gradient(135deg, #f9b233, #ffd166);
+  color: #0a2647;
+  border: none;
+  padding: 16px 36px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.acciones button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 30px 20px;
+  }
+
+  .contenedor h1 {
+    font-size: 1.8rem;
+  }
+}

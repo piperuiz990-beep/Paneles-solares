@@ -1,0 +1,134 @@
+/* =====================
+   RESET BÁSICO
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4aa3a3, #1e3c72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* =====================
+   CONTENEDOR
+===================== */
+.contenedor {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================
+   TÍTULO
+===================== */
+.contenedor h1 {
+  text-align: center;
+  color: #0a2647;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.contenedor h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f9b233, #ffd166);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* =====================
+   CAMPOS
+===================== */
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #144272;
+  font-size: 0.95rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Focus */
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #f9b233;
+  box-shadow: 0 0 0 2px rgba(249, 178, 51, 0.25);
+}
+
+/* =====================
+   TEXTAREA
+===================== */
+.campo textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* =====================
+   BOTÓN
+===================== */
+.acciones {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.acciones button {
+  background: linear-gradient(135deg, #f9b233, #ffd166);
+  color: #0a2647;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.acciones button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 30px 20px;
+  }
+
+  .contenedor h1 {
+    font-size: 1.7rem;
+  }
+}
