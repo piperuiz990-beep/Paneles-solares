@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Consumo de Energía</title>
+  <link rel="stylesheet" href="D:\codigo de edicion\paneles solares\css\encuesta.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+  <h1>Encuesta de Consumo de Energía</h1>
+
+  <p>
+    Para brindarte una cotización adecuada de tu sistema solar, es muy importante
+    conocer tus hábitos reales de consumo. Te pedimos que respondas esta encuesta
+    de manera <strong>honesta y veraz</strong>.
+  </p>
+
+  <div class="nota">
+    ✅ Con la información proporcionada te entregaremos un
+    <strong>aproximado del costo de los equipos</strong> necesarios para tu sistema solar.
+  </div>
+
+  <form>
+
+    <!-- DATOS DE CONTACTO -->
+    <div class="campo">
+      <label for="nombre">Nombres y Apellidos *</label>
+      <input type="text" id="nombre" placeholder="Andrés Laverde" required>
+    </div>
+
+    <div class="campo">
+      <label for="correo">Correo electrónico *</label>
+      <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+    </div>
+
+    <div class="campo">
+      <label for="telefono">Número de celular *</label>
+      <input type="tel" id="telefono" placeholder="Ej: 999 999 999" required>
+    </div>
+
+    <!-- CONSUMO DIURNO -->
+    <div class="campo">
+      <label>¿Qué equipos están encendidos de 6 AM a 6 PM?</label>
+
+      <ul class="grupo-checkbox">
+        <li><label><input type="checkbox"> Nevera</label></li>
+        <li><label><input type="checkbox"> Plancha</label></li>
+        <li><label><input type="checkbox"> Lavadora</label></li>
+        <li><label><input type="checkbox"> Televisor</label></li>
+        <li><label><input type="checkbox"> Computador</label></li>
+        <li><label><input type="checkbox"> Equipo de sonido</label></li>
+      </ul>
+
+      <textarea rows="4"
+        placeholder="Otros equipos (indique cuáles)"></textarea>
+    </div>
+
+    <!-- DÍAS DE MAYOR CONSUMO -->
+    <div class="campo">
+      <label>Días donde se utiliza más energía</label>
+      <select>
+        <option>Entre semana</option>
+        <option>Fines de semana</option>
+        <option>Consumo similar todos los días</option>
+      </select>
+    </div>
+
+    <!-- CONSUMO NOCTURNO -->
+    <div class="campo">
+      <label>
+        ¿Consume energía en la madrugada por trabajo u otra actividad?
+      </label>
+
+      <select>
+        <option>Sí</option>
+        <option>No</option>
+        <option>Muy poco</option>
+      </select>
+
+      <textarea rows="4"
+        placeholder="Cantidad de horas y días a la semana"></textarea>
+    </div>
+
+    <!-- CANTIDAD DE EQUIPOS -->
+    <div class="campo">
+      <label>Total aproximado de electrodomésticos</label>
+      <input type="number" placeholder="Ej: 15">
+    </div>
+
+    <!-- LISTA DE EQUIPOS -->
+    <div class="campo">
+      <label>Lista de electrodomésticos principales</label>
+      <textarea rows="4"
+        placeholder="Ej: Refrigerador, TV, lavadora, microondas..."></textarea>
+    </div>
+
+    <!-- EQUIPOS DE ALTO CONSUMO -->
+    <div class="campo">
+      <label>¿Cuenta con alguno de estos equipos?</label>
+
+      <ul class="grupo-checkbox">
+        <li><label><input type="checkbox"> Aire acondicionado</label></li>
+        <li><label><input type="checkbox"> Ducha eléctrica</label></li>
+        <li><label><input type="checkbox"> Horno eléctrico</label></li>
+        <li><label><input type="checkbox"> Secadora eléctrica</label></li>
+        <li><label><input type="checkbox"> Calentador eléctrico de agua</label></li>
+      </ul>
+    </div>
+
+    <!-- FACTURA -->
+    <div class="campo">
+      <label>
+        Consumo en kWh de los últimos 3 meses (si tiene factura)
+      </label>
+      <textarea rows="4"
+        placeholder="Ej: Enero: 280 kWh, Febrero: 300 kWh..."></textarea>
+    </div>
+
+    <!-- CONFIRMACIÓN -->
+    <div class="campo">
+      <label>
+        <input type="checkbox" required>
+        Confirmo que la información proporcionada es verdadera
+      </label>
+    </div>
+
+    <!-- BOTÓN -->
+    <div class="acciones">
+      <button type="submit">
+        Enviar encuesta y recibir estimado
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+</body>
+</html>

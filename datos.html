@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+   <link rel="stylesheet" href="D:\codigo de edicion\paneles solares\css\datos.css">
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <h1>Datos de Contacto</h1>
+
+    <form
+      action="mailto:tucorreo@ejemplo.com"
+      method="post"
+      enctype="text/plain">
+
+      <div class="campo">
+        <label for="nombre">Nombre y Apellido *</label>
+        <input type="text" id="nombre" name="Nombre y Apellido" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefono1">Teléfono 1 *</label>
+        <input type="tel" id="telefono1" name="Telefono 1" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefono2">Teléfono 2</label>
+        <input type="tel" id="telefono2" name="Telefono 2">
+      </div>
+
+      <div class="campo">
+        <label for="ciudad">Ciudad *</label>
+        <input type="text" id="ciudad" name="Ciudad" required>
+      </div>
+
+      <div class="campo">
+        <label for="direccion">Direccion</label>
+        <input type="text" id="departamento" name="Departamento">
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="Correo Electronico" required>
+      </div>
+
+      <div class="campo">
+        <label for="notas">Notas adicionales</label>
+        <textarea id="notas" name="Notas" rows="4"></textarea>
+      </div>
+
+      <div class="acciones">
+        <button type="submit">
+          Enviar encuesta y recibir estimado
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
